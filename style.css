@@ -1,0 +1,80 @@
+:root {
+  --background-color: #d5e1ef;
+  --font-size: 15px;
+  --font-family: 'Outfit', sans-serif;
+  --card-background: #ffffff;
+  --card-text-color: #7b879d;
+  --card-width: 290px;
+  --card-spacing: 16px;
+  --card-border-radius: 24px;
+  --card-title-size: 22px;
+  --card-title-color: #1f3251;
+  --card-shadow: 0px 8px 20px 0px rgba(31, 50, 81, 0.1);
+}
+
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/outfit-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/outfit-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/outfit-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/outfit-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/outfit-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/outfit-v10-latin-regular.svg#Outfit') format('svg'); /* Legacy iOS */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/outfit-v10-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/outfit-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/outfit-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/outfit-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/outfit-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/outfit-v10-latin-700.svg#Outfit') format('svg'); /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app-card {
+  width: var(--card-width);
+  max-width: 100%;
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+  color: var(--card-text-color);
+  text-align: center;
+  overflow: hidden;
+  padding: var(--card-spacing);
+  box-shadow: var(--card-shadow);
+}
+
+.app-card-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.app-card-body {
+  padding: 0 16px 8px;
+}
+
+.app-card-title {
+  font-size: var(--card-title-size);
+  color: var(--card-title-color);
+  margin: 20px 0 0;
+  font-weight: 700;
+}
